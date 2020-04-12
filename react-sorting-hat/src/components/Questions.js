@@ -47,8 +47,8 @@ const Questions = (props) => {
 
     return (
         <Form className="form-inline">
-            <p>{error}</p>
             <div className={classes.root}>
+                <p className="error">{error}</p>
                 <Stepper activeStep={activeStep} orientation="vertical">
                     {questions.map((question, index) => (
                         <Step key={index}>
@@ -82,6 +82,7 @@ const Questions = (props) => {
                                                 color="primary"
                                                 className={classes.button}
                                                 type="submit"
+                                                size="small"
                                             >
                                                 Submit
                                             </Button>
@@ -91,6 +92,7 @@ const Questions = (props) => {
                                                 color="primary"
                                                 onClick={handleNext}
                                                 className={classes.button}
+                                                size="small"
                                             >
                                                 Next
                                             </Button>

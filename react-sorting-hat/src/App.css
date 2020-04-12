@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    background: url("./images/bg.jpg") no-repeat top left;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form .MuiPaper-root {
+    background: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form .MuiTypography-body1 {
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form .MuiTypography-body2 {
+    font-family: "Montserrat", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+form .MuiStepConnector-lineVertical {
+    min-height: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form .error {
+    margin: 20px 0 0 30px;
+    color: black;
+}
+
+form .MuiButton-containedPrimary,
+form .MuiButton-containedPrimary:hover {
+    background-color: #d9c499;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+
+form .MuiStepIcon-root.MuiStepIcon-active,
+form .MuiStepIcon-root.MuiStepIcon-completed {
+    color: #d9c499;
+    font-family: "Montserrat", sans-serif;
+}
+
+form .MuiStepIcon-text {
+    fill: #000;
+    font-size: 0.75rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.faction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
