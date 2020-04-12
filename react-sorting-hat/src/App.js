@@ -39,6 +39,22 @@ const App = () => {
             <Grid container>
                 <Grid item xs={4}>
                     <Questions getValues={answersHandler} />
+
+                    <ul class="credits">
+                        <li>
+                            <p>Credits:</p>
+                        </li>
+                        <li>
+                            <a href="//freepik.com" target="_blank">
+                                freepik.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="//pngfuel.com" target="_blank">
+                                pngfuel.com
+                            </a>
+                        </li>
+                    </ul>
                 </Grid>
                 <Grid item xs={8}>
                     {console.log(answer)}

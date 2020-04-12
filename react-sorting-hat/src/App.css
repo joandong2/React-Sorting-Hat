@@ -48,6 +48,14 @@ form .MuiStepIcon-text {
     font-family: "Montserrat", sans-serif;
 }
 
+.credits {
+    margin-left: 20px;
+}
+
+.credits li:first-child {
+    list-style-type: none;
+}
+
 .faction {
     display: flex;
     align-items: center;
